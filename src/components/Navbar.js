@@ -5,6 +5,9 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import { AiOutlineMail } from "react-icons/ai";     
+import { FaLaptopCode } from "react-icons/fa"; 
+import { IoRibbon}from "react-icons/io5";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -42,8 +45,8 @@ function NavBar() {
       <Container>
         {/* Brand / Logo */}
         <Navbar.Brand as={Link} to="/" className="d-flex">
-          <span style={{ fontWeight: "bold", fontSize: "1.3rem", color: "#6f42c1" }}>
-            MyPortfolio
+        <span style={{ fontWeight: "bold", fontSize: "1.3rem", color: "#6f42c1" }}>
+            ShrikantShinde.
           </span>
         </Navbar.Brand>
 
@@ -74,6 +77,19 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
+{/* Skills */}
+<Nav.Item>
+  <Nav.Link as={Link} to="/skills" onClick={() => setExpanded(false)}>
+    <FaLaptopCode style={{ marginBottom: "2px" }} /> Skills
+  </Nav.Link>
+</Nav.Item>
+
+{/* Certifications & Awards */}
+<Nav.Item>
+  <Nav.Link as={Link} to="/certifications" onClick={() => setExpanded(false)}>
+    <IoRibbon style={{ marginBottom: "2px" }} /> Certifications
+  </Nav.Link>
+</Nav.Item>
 
             <Nav.Item>
               <Nav.Link as={Link} to="/project" onClick={() => setExpanded(false)}>
@@ -87,6 +103,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+<Nav.Item>
+  <Nav.Link as={Link} to="/contact" onClick={() => setExpanded(false)}>
+    <AiOutlineMail style={{ marginBottom: "2px" }} /> Contact
+  </Nav.Link>
+</Nav.Item>
             <Nav.Item className="fork-btn mt-2 mt-md-0">
               <Button
                 href="https://github.com/ShrikantShinde1214"
