@@ -6,6 +6,10 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { SiTelegram } from "react-icons/si"; 
+import { AiOutlineMail } from "react-icons/ai";
+
 
 function Home2() {
   return (
@@ -74,7 +78,37 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-        
+          <li className="social-icons">
+    <a
+      href="https://wa.me/919370383946" 
+      target="_blank"
+      rel="noreferrer"
+      className="icon-colour home-social-icons"
+    >
+      <BsWhatsapp />
+    </a>
+  </li>
+
+  <li className="social-icons">
+    <a
+      href="https://t.me/shrikantshinde" 
+      target="_blank"
+      rel="noreferrer"
+      className="icon-colour home-social-icons"
+    >
+      <SiTelegram />
+    </a>
+  </li>
+  <li className="social-icons">
+  <a
+    href="mailto:shindeshrikant1214@gmail.com"
+    target="_blank"
+    rel="noreferrer"
+    className="icon-colour home-social-icons"
+  >
+    <AiOutlineMail />
+  </a>
+</li>
             </ul>
           </Col>
         </Row>
