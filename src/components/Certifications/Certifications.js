@@ -5,14 +5,14 @@ import { BsPatchCheckFill } from "react-icons/bs"; // certificate icon
 function Certifications() {
   const certificates = [
     {
-      title: "Transaction Banking Domain Expert",
-      issuer: "Aurionpro Solutions Private Limited, Navi Mumbai",
-      date: "2024",
-    },
-    {
       title: "Rising Star Award",
       issuer: "Aurionpro Solutions Private Limited, Navi Mumbai",
       date: "2025",
+    },
+    {
+      title: "Transaction Banking Domain Expert",
+      issuer: "Aurionpro Solutions Private Limited, Navi Mumbai",
+      date: "2024",
     },
     {
       title: "Excellence in Java Development",
